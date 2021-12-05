@@ -1,0 +1,11 @@
+name:a workflow for my hello
+on:push
+jobs:
+build:
+name:Hello world action
+runs-on:ubuntu latest
+steps:
+-uses:action/checkout
+-uses:./action-a
+with:
+MY_NAME:"Mona"
